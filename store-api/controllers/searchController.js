@@ -24,7 +24,7 @@ const searchAll = async (req,res)=>{
     }
 
     if(delivery){
-        queryObj.delivery= delivery==="true"?true:false
+        queryObj.delivery= delivery==="on"?true:false
     }
     
     let result = Search.find(queryObj)
